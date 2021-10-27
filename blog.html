@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+        <link rel="stylesheet" href="blog.css">
+		<title>Бьюти блог Аришки</title>
+        <style>
+        body{
+            background: #c183e0;
+            width: 100%;
+        }
+        .shapka {
+            width: 100%;
+            display: flex; 
+            justify-content: flex-start;
+            align-items: stretch;
+            margin-left: 0px;
+            margin-right: 0px;
+            background: #FF99FF;
+        }
+        p.text1{
+            text-indent: 1em;
+            font-size: 2em;
+            color: white;
+            font-family: DejaVu Sans Mono, monospace;
+        }
+        .text1 {
+            display: block;
+            flex-direction: column;
+            margin: 10px;
+            padding: 0px;
+        }
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .middle-side {
+            float: left;
+            width: 70%;
+            height: 100%;
+        }
+        .right-side {
+            float: right;
+            width: 30%;
+            height: 100%;
+        }
+        .up {
+            background: #FF99FF;
+            width: 100%;
+        }
+        .down {
+            background: #FF99FF;
+            width: 100%;
+        }
+        .headFoot {
+            display: flex; 
+            justify-content: space-around;
+            align-items: stretch;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        p.up-down {
+            font-size: 1.2em;
+            color: #660099;
+            font-family: DejaVu Sans Mono, monospace;
+        }
+        .textblock {
+            display: block;
+            flex-direction: column;
+            margin: 10px;
+            padding: 10px;
+            background: #FFCCFF;
+        }
+        p.textblock {
+            font-size: 2em;
+            color: white;
+            font-family: DejaVu Sans Mono, monospace;
+        }
+        p.text {
+            font-size: 1.3em;
+            color: white;
+            font-family: DejaVu Sans Mono, monospace;
+        }
+        .avatar {
+            border-radius: 100%;
+            width: 95%;
+        }
+        .first-column {
+            float: left;
+            width: 10%;
+            height: 100%;
+        }
+        .second-column {
+            float: left;
+            width: 90%;
+            height: 100%;
+        }
+        .likes {
+            display: flex;
+            justify-content: space-around;
+            flex-flow: row wrap;
+            align-items: stretch;
+        }
+        .box {
+            flex-grow: 1;
+        }
+        .box1 {
+            flex-grow: 6;
+            margin-top: -20px;
+        }
+        .d18 {
+            position: relative;
+            width: 33px; 
+            height: 26px;
+        }
+        .d18:before, .d18:after {
+            content: "";
+            position: absolute; 
+            left: 16px; 
+            top: 0;
+            width: 16px; 
+            height: 26px;
+            background: white;
+            border-radius: 16px 16px 0 0;
+            transform: rotate(-45deg); 
+            transform-origin: 0 100%;
+        }
+        .d18:after {
+            left: 0;
+            transform: rotate(45deg); 
+            transform-origin: 100% 100%;
+        }
+        .arrow {
+            height: 24px;
+            position: relative;
+            width: 4.8px;
+            display: inline-block;
+            margin-top: 4px;
+            background-color: white;
+        }   
+        .arrow:before  {
+            content: " ";
+            width: 4.8px;
+            background-color: white;
+            height: 16.8px;
+            position: absolute;
+            top: -4.8px;
+            transform: rotate(50deg);
+            left: -4.8px;
+        }
+        .arrow:after {
+            content: " ";
+            width: 4.8px;
+            background-color: white;
+            height: 16.8px;
+            position: absolute;
+            top: -4.8px;
+            transform: rotate(-50deg);
+            right: -4.8px;
+        }
+        .half-right {
+            transform: rotate(45deg);
+        }
+        .d33 {
+            width: 36px; 
+            height: 19.2px; 
+            margin-left: 6.24px;
+            background: #ffffff;
+            position: relative;
+            border-radius: 2.4px;
+            margin-top: -10px;
+        }
+        .d33:before {
+            content: "";
+            width: 0; 
+            height: 0;
+            position: absolute; 
+            right: 100%; 
+            top: calc(50% - 2.88px);
+            border-top: 2.88px solid transparent;
+            border-right: 5.76px solid #ffffff;
+            border-bottom: 2.88px solid transparent;
+        }
+        .ads {
+            display: block;
+            flex-direction: column;
+            width: 90%;
+            background: #8a57bd;
+            margin: 0px;
+            padding: 10px;
+        }
+        p.ads {
+            font-size: 1.2em;
+            color: azure;
+            text-decoration: underline;
+            font-family: DejaVu Sans Mono, monospace;
+        }
+        .ads-photo{
+            width: 100%;
+        }
+        </style>  
+	</head>
+	<body>
+		<div class="up">
+            <div class="headFoot">
+                <b><u><p class="up-down">ГЛАВНАЯ</p></u></b>
+                <b><u><p class="up-down">СООБЩЕСТВО</p></u></b>
+                <b><u><p class="up-down">ПОЛЬЗОВАТЕЛИ</p></u></b>
+                <b><u><p class="up-down">НОВОЕ</p></u></b>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="middle-side">
+                <div class="shapka">
+                    <b><p class="text1">@Arishpuska</p></b>
+                </div>
+                <div class="textblock">
+                    <div class="row">
+                        <div class="first-column">
+                            <img src="https://e7.pngegg.com/pngimages/674/524/png-clipart-professional-computer-icons-avatar-job-avatar-heroes-computer.png" class="avatar"/>
+                        </div>
+                        <div class="second-column">
+                            <b><p class="textblock">интересный факт:</p></b>
+                            <hr>
+                            <p class="text" align="justify">я не хочу опоздать на маник</p>
+                            <hr>
+                            <div class="likes">
+                                <div class="box"><div class="d18"></div></div>
+                                <div class="box"><div class="arrow half-right"> </div></div>
+                                <div class="box"><p><div class="d33"></div></p></div>
+                                <div class="box1"><p class="text" align="right">20.10.21</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="textblock">
+                    <div class="row">
+                        <div class="first-column">
+                            <img src="https://e7.pngegg.com/pngimages/674/524/png-clipart-professional-computer-icons-avatar-job-avatar-heroes-computer.png" class="avatar"/>
+                        </div>
+                        <div class="second-column">
+                            <b><p class="textblock">Я иГрАЮ В кОмПьюТеР</p></b>
+                            <hr>
+                            <p class="text" align="justify">хочу не слететь со стипухи спасибо</p>
+                            <hr>
+                            <div class="likes">
+                                <div class="box"><div class="d18"></div></div>
+                                <div class="box"><div class="arrow half-right"> </div></div>
+                                <div class="box"><p><div class="d33"></div></p></div>
+                                <div class="box1"><p class="text" align="right">12.10.21</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="textblock">
+                    <div class="row">
+                        <div class="first-column">
+                            <img src="https://e7.pngegg.com/pngimages/674/524/png-clipart-professional-computer-icons-avatar-job-avatar-heroes-computer.png" class="avatar"/>
+                        </div>
+                        <div class="second-column">
+                            <b><p class="textblock">Не ну посмотрите а</p></b>
+                            <hr>
+                            <table id="table1">
+                                <tr><img src="https://i.pinimg.com/564x/4a/79/7b/4a797b6ce50f3a2357adf77ec3de62ee.jpg" width="40%"/></tr>
+                                <tr><img src="https://i.pinimg.com/564x/43/8a/0f/438a0f899bc4d8fcb59ca0420041d14d.jpg" width="40%"/></tr>
+                            </table>
+                            <hr>
+                            <div class="likes">
+                                <div class="box"><div class="d18"></div></div>
+                                <div class="box"><div class="arrow half-right"> </div></div>
+                                <div class="box"><p><div class="d33"></div></p></div>
+                                <div class="box1"><p class="text" align="right">24.09.21</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right-side">
+                <div class="ads">
+                    <img src="https://i.pinimg.com/564x/82/ba/00/82ba00ae9fd10bd030618933e46db1c3.jpg" class="ads-photo"/>
+                    <p class="ads">Присоединись к сообществу...</p>
+                </div>
+
+                <div class="ads">
+                    <img src="https://i.pinimg.com/564x/e9/5b/3f/e95b3f5ff01807c8a4956e7914b681ab.jpg" class="ads-photo"/>
+                    <p class="ads">Послушай наш новый выпуск подкаста...</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="down">
+            <div class="headFoot">
+                <b><u><p class="up-down">СТАТИСТИКА</p></u></b>
+                <b><u><p class="up-down">+НОВЫЙ ПОСТ</p></u></b>
+                <b><u><p class="up-down">УВЕДОМЛЕНИЯ</p></u></b>
+                <b><u><p class="up-down">ГОЛОСОВАТЬ ЗА ПРЕДСЕДАТЕЛЯ ITMO.STUDENTS</p></u></b>
+            </div>
+        </div>
+	</body>
+</html>
